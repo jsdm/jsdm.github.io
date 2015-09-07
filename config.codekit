@@ -29,7 +29,7 @@
 		"outputAbbreviatedPath": "\/img\/2048.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/cam_be_like.jpg": {
 		"fileType": 16384,
@@ -40,7 +40,7 @@
 		"outputAbbreviatedPath": "\/img\/cam_be_like.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/JanProfileSmall.png": {
 		"fileType": 32768,
@@ -51,7 +51,7 @@
 		"outputAbbreviatedPath": "\/img\/JanProfileSmall.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/mobilewebdev.jpg": {
 		"fileType": 16384,
@@ -62,7 +62,7 @@
 		"outputAbbreviatedPath": "\/img\/mobilewebdev.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/img\/profilepic.jpg": {
 		"fileType": 16384,
@@ -73,7 +73,7 @@
 		"outputAbbreviatedPath": "\/img\/profilepic.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/index-old.html": {
 		"fileType": 8192,
@@ -190,7 +190,7 @@
 		"outputAbbreviatedPath": "\/views\/images\/pizza.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/views\/images\/pizzeria.jpg": {
 		"fileType": 16384,
@@ -201,7 +201,7 @@
 		"outputAbbreviatedPath": "\/views\/images\/pizzeria.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/views\/images\/pizzeriaold.jpg": {
 		"fileType": 16384,
@@ -212,7 +212,7 @@
 		"outputAbbreviatedPath": "\/views\/images\/pizzeriaold.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/views\/images\/pizzeriasmall.jpg": {
 		"fileType": 16384,
@@ -223,7 +223,7 @@
 		"outputAbbreviatedPath": "\/views\/images\/pizzeriasmall.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/views\/js\/main.js": {
 		"fileType": 64,
