@@ -449,11 +449,14 @@ var resizePizzas = function(size) {
   }
 
   // Iterates through pizza elements on the page and changes their widths
+  //changed from querySelectorAll to getElementsByClassName for speed improvement
   function changePizzaSizes(size) {
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
+    var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[0], size);
+    var newwidth = (document.getElementsByClassName("randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+    for (var i = 0; i < document.getElementsByClassName("randomPizzaContainer").length; i++) {
+      // var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
+      // var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+      document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
     }
   }
 
@@ -469,8 +472,9 @@ var resizePizzas = function(size) {
 window.performance.mark("mark_start_generating"); // collect timing data
 
 // This for-loop actually creates and appends all of the pizzas when the page loads
+var pizzasDiv = document.getElementById("randomPizzas");
 for (var i = 2; i < 100; i++) {
-  var pizzasDiv = document.getElementById("randomPizzas");
+  // var pizzasDiv = document.getElementById("randomPizzas");
   pizzasDiv.appendChild(pizzaElementGenerator(i));
 }
 
@@ -501,16 +505,12 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-
-  var items = document.querySelectorAll('.mover');
-  console.log("======================= New call to updatePositions =======================");
+  // getElementsByClassName is faster that querySelectorAll
+  // sinus is the same each time the function is called
+  var items = document.getElementsByClassName("mover");
+  var sinus = (document.body.scrollTop / 1250);
   for (var i = 0; i < items.length; i++) {
-    console.log("----");
-    console.log("i = " + i);
-    console.log("i % 5 = " + (i % 5));
-    console.log("document.body.scrollTop = " + document.body.scrollTop);
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
-    console.log("phase = " + phase);
+    var phase = Math.sin(sinus + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 

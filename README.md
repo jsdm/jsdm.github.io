@@ -1,4 +1,19 @@
 ## Website Performance Optimization portfolio project
+What i have done to optimize:
+
+On index.html:
+All google analytics javascript has been moved down after <body>.
+All javascript is run "async", so it doesn't interfere with rendering the page.
+All CSS and images has been inlined, using grunt. (very ugly, but fast).
+The webfont fetching has been moved after the <body> and has been inlined using grunt.
+
+On the Pizza page:
+changed all instances of querySelectorAll to getElementsByClassName for speed improvement
+In the updatePositions function i moved the scrollTop calculation out of the for loop, as it is the same as long as the function is running.
+Changed the amount of pizzas rendered to actual amount needed.
+
+
+## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
