@@ -1,4 +1,6 @@
 ## Website Performance Optimization portfolio project
+Checkout http://jsdm.github.io/
+
 What i have done to optimize:
 
 On index.html:
@@ -11,6 +13,7 @@ On the Pizza page:
 changed all instances of querySelectorAll to getElementsByClassName for speed improvement
 In the updatePositions function i moved the scrollTop calculation out of the for loop, as it is the same as long as the function is running.
 Changed the amount of pizzas rendered to actual amount needed.
+Changed the changing of the pizzaimagesize, moving static variables outside the for loop.
 
 
 ## Website Performance Optimization portfolio project

@@ -450,13 +450,13 @@ var resizePizzas = function(size) {
 
   // Iterates through pizza elements on the page and changes their widths
   //changed from querySelectorAll to getElementsByClassName for speed improvement
+  //Moved getting the randomPizzaContainer and dx outside the for loop,and made them static, as they doesnt change.
   function changePizzaSizes(size) {
-    var dx = determineDx(document.getElementsByClassName("randomPizzaContainer")[0], size);
-    var newwidth = (document.getElementsByClassName("randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-    for (var i = 0; i < document.getElementsByClassName("randomPizzaContainer").length; i++) {
-      // var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      // var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
-      document.getElementsByClassName("randomPizzaContainer")[i].style.width = newwidth;
+    var randomPizzac = document.getElementsByClassName("randomPizzaContainer");
+    var dx = determineDx(randomPizzac[0], size);
+      var newwidth = (randomPizzac[0].offsetWidth + dx) + 'px';
+    for (var i = 0; i < randomPizzac.length; i++) {
+      randomPizzac[i].style.width = newwidth;
     }
   }
 
@@ -506,7 +506,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
   // getElementsByClassName is faster that querySelectorAll
-  // sinus is the same each time the function is called
+  // sinus is the same while the funtion is running
   var items = document.getElementsByClassName("mover");
   var sinus = (document.body.scrollTop / 1250);
   for (var i = 0; i < items.length; i++) {
