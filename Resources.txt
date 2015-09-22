@@ -1,9 +1,0 @@
-Resources used in order to complete the project:
-www.stackoverflow.com
-https://github.com/udacity/frontend-nanodegree-mobile-portfolio
-https://github.com/pianove/frontend-nanodegree-mobile-portfolio/
-https://github.com/Sarika-C/frontend-nanodegree-mobile-portfolio
-http://www.w3schools.com/jsref/prop_element_scrolltop.asp
-https://developer.mozilla.org
-https://discussions.udacity.com
-and of course www.udacity.com :)
