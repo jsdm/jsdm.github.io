@@ -4,7 +4,7 @@ var bio = {
     "contacts": {"mobile": "+977 9813018651", "email": "161076@gmail.com", "github": "jsdm", "twitter": "@janmadsen", "location": "Kathmandu"},
     "welcomeMessage": "Welcome to my story Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, illum!",
     "skills": ["HTML5", "Javascript", "CSS", "Design"],
-    "biopic": "images/fry.jpg"
+    "biopic": "images/Jan-md-sq.jpg"
   };
 function displayBio(){
   formattedSkills = bio.skills;
